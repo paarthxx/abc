@@ -1,44 +1,75 @@
+$container-max-width: 1000px;
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  .container {
-    width: 90%;
-    max-width: $container-max-width;
-    margin: 0 auto;
-  }
-  .firstSectinImage {
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    transform: translate(-15%, -50%);
-  }
-  .firstSectinImage img {
-    height: 400px;
-  }
-  .firstSectionHeading {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-40%, -50%);
-  }
-  .firstSectionHeading h1 {
-    font-family: roboto, arial, helvetica;
-    font-weight: bold;
-    margin: 0px;
-    line-height: 60px;
-    font-size: 2.4rem;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    color: #3d3d4a;
-    text-transform: uppercase;
-  }
-  .letterSpacing {
-    letter-spacing: 7px;
-  }
-  .firstSectionHeading span {
-    color: #5b53ff;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color:red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0);
+  color: red;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Georiga";
+}
+
+
+.container {
+  width: 90%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  color: red;
+}
+
+section {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 20px 0;
+}
+
+li {
+  line-height: 1.4 ;
+}
+
+header {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #000000;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+}
+
+.letterSpacing {
+  letter-spacing: 7px;
+}
+
+#main_content {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  line-break: auto;
+}
+  
   .mediaIcons {
     position: fixed;
     left: 30px;
@@ -61,18 +92,13 @@
   .mediaIcons a i {
     color: rgba(39, 39, 39, 0.8);
   }
-  .mediaIcons a:hover .fa-facebook-f {
-    color: #5078cf;
-  }
-  .mediaIcons a:hover .fa-twitter {
+  .mediaIcons a:hover .fa-soundcloud {
     color: #00acee;
   }
   .mediaIcons a:hover .fa-instagram {
     color: #fd9217;
   }
-  .mediaIcons a:hover .fa-youtube {
-    color: #ff0000;
-  }
+  
   .productSection {
     width: 85%;
     background-color: #ffffff;

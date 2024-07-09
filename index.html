@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.scss">
     <title>paarth.xyz</title>
-</head>
-<body>
-   <header>
-        <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a href="https://paarth.xyz">
+          <h1>paarth.xyz</h1>
         </a>
       </div>
-   </header>
-</body>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+         this content should be in Monaco
+      </section>
+    </div>
+  </body>
 </html>
+
